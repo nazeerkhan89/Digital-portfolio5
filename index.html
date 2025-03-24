@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>My Portfolio</title>
+<script src="script.js"></script>
+  <style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+section {
+  padding: 40px;
+}
+
+h2 {
+  color: #4CAF50;
+}
+
+img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.project-card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input, textarea, button {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="https://raw.githubusercontent.com/nazeerkhan89/Digital-portfolio5/refs/heads/main/DocScanner%2024-Mar-2025%201-41%20pm.jpg">
+      <p>Hello! I'm a passionate web developer with skills in HTML, CSS, and JavaScript. I love creating responsive and interactive web experiences.</p>
+    <a href="myresume.html">my resume</a>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-card">
+      <h3>Project 1</h3>
+      <p>A responsive portfolio website using HTML and CSS.</p>
+    </div>
+    <div class="project-card">
+      <h3>Project 2</h3>
+      <p>Interactive to-do list application using JavaScript.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 My Portfolio</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
